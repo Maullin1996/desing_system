@@ -23,3 +23,4 @@ export './atoms/design_illustration.dart';
 
 //molecules
 export './molecules/design_action_card.dart';
+export './molecules/design_styled_card.dart';

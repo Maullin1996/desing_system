@@ -52,9 +52,11 @@ packages:
   desing_system:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: dde0007ba4d219dc47a301c55afb177b2f60c044
+      url: "https://github.com/Maullin1996/desing_system.git"
+    source: git
     version: "0.0.1"
   fake_async:
     dependency: transitive

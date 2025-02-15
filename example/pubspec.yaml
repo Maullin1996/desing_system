@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   desing_system:
     git: 
-      url: https://github.com/Maullin1996/design-system.git
+      url: https://github.com/Maullin1996/desing_system.git
       ref: main
 
 dev_dependencies:
