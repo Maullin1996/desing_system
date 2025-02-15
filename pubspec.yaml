@@ -1,0 +1,53 @@
+name: desing_system
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  assets:
+    - assets/images/bg/bg-categories.png
+    - assets/images/illustrations/space.png
+    - assets/images/illustrations/love.png
+    - assets/images/illustrations/technology-exploration.png
+    - assets/images/illustrations/atom.png
+    - assets/images/illustrations/molecules.png
+    - assets/images/illustrations/organisms.png
+    - assets/images/illustrations/programming.png
+    - assets/images/illustrations/design.png
+    - assets/images/illustrations/design-white.png
+    - assets/images/illustrations/consulting.png
+    - assets/images/illustrations/templates.png
+    - assets/images/illustrations/action.png
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  fonts:
+    - family: SourceSans3
+      fonts:
+        - asset: assets/fonts/SourceSans3-Bold.ttf
+        - asset: assets/fonts/SourceSans3-ExtraBold.ttf
+        - asset: assets/fonts/SourceSans3-Light.ttf
+        - asset: assets/fonts/SourceSans3-SemiBold.ttf
