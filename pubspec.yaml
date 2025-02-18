@@ -25,19 +25,8 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   assets:
-    - assets/images/bg/bg-categories.png
-    - assets/images/illustrations/space.png
-    - assets/images/illustrations/love.png
-    - assets/images/illustrations/technology-exploration.png
-    - assets/images/illustrations/atom.png
-    - assets/images/illustrations/molecules.png
-    - assets/images/illustrations/organisms.png
-    - assets/images/illustrations/programming.png
-    - assets/images/illustrations/design.png
-    - assets/images/illustrations/design-white.png
-    - assets/images/illustrations/consulting.png
-    - assets/images/illustrations/templates.png
-    - assets/images/illustrations/action.png
+    - assets/images/illustrations/
+    - assets/images/bg/
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/to/asset-from-package
