@@ -6,90 +6,163 @@ class AtomsButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double _width = MediaQuery.of(context).size.width;
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 80,
+        backgroundColor: DesignColors.strongSecondary,
+        leading: IconButton(
+          icon: Icon(Icons.undo, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
       backgroundColor: DesignColors.strongSecondary,
-      body: Container(
-        padding: EdgeInsets.only(top: 44),
-        width: MediaQuery.of(context).size.width,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              margin: EdgeInsets.only(left: 24),
-              child: IconButton(
-                icon: 
-                  Icon(Icons.undo,
-                  color: Colors.white),
-                  onPressed: () => Navigator.pop(context),
+      body: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: Container(
+              padding: const EdgeInsets.only(bottom: 40),
+              width: width,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(32),
+                  topRight: Radius.circular(32),
+                ),
               ),
-            ),
-            SizedBox(height: 30),
-            Expanded(
-              child: Container(
-                width: _width,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24),
-                    topRight: Radius.circular(24),
-                  ),
-              ),
-              child: Column(
-                children: [
-                  Container(
-                    transform: Matrix4.translationValues(0.0, -22.0, 0.0),
-                    height: 44,
-                    width: 244,
-                    decoration: BoxDecoration(
-                      color: DesignColors.statusSuccess,
-                      borderRadius: BorderRadius.circular(16.0)
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Inventario de Botones',
-                        style: TextStyle(
-                          fontFamily: DesignTypography.familySourceSans3,
-                          color: Color.fromRGBO(45, 49, 66, 1),
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold
-                        ),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      'Botón Primario Large',
+                      style: TextStyle(
+                        fontFamily: DesignTypography.familySourceSans3,
+                        color: Color.fromRGBO(45, 49, 66, 1),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ),
-                  Text(
-                    'Botón Primario Large',
+                    Container(
+                      width: width,
+                      height: 213,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(247, 247, 247, 1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          DesignButton(
+                            type: ButtonType.primaryLarge,
+                            text: 'Button',
+                            onPressed: () {},
+                          ),
+                          DesignButton(
+                            type: ButtonType.primaryLarge,
+                            text: 'Button',
+                            onPressed: null,
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    Text(
+                      'Botón Primario Medium',
+                      style: TextStyle(
+                        fontFamily: DesignTypography.familySourceSans3,
+                        color: Color.fromRGBO(45, 49, 66, 1),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Container(
+                      width: width,
+                      height: 213,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(247, 247, 247, 1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          DesignButton(
+                            type: ButtonType.primaryMedium,
+                            text: 'Button',
+                            onPressed: () {},
+                          ),
+                          DesignButton(
+                            type: ButtonType.primaryMedium,
+                            text: 'Button',
+                            onPressed: null,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      'Botón Primario Small',
+                      style: TextStyle(
+                        fontFamily: DesignTypography.familySourceSans3,
+                        color: Color.fromRGBO(45, 49, 66, 1),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Container(
+                      width: width,
+                      height: 213,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(247, 247, 247, 1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          DesignButton(
+                            type: ButtonType.primarySmall,
+                            text: 'Button',
+                            onPressed: () {},
+                          ),
+                          DesignButton(
+                            type: ButtonType.primarySmall,
+                            text: 'Button',
+                            onPressed: null,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                height: 44,
+                width: 244,
+                decoration: BoxDecoration(
+                  color: DesignColors.statusSuccess,
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'Inventario de Botones',
                     style: TextStyle(
                       fontFamily: DesignTypography.familySourceSans3,
                       color: Color.fromRGBO(45, 49, 66, 1),
                       fontSize: 20,
-                      fontWeight: FontWeight.bold
-                    )),
-                  Container(
-                    width: _width,
-                    height: 213,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(247, 247, 247, 1),
-                      borderRadius: BorderRadius.circular(12),
+                      fontWeight: FontWeight.bold,
                     ),
-                    child: Column(
-                      children: [
-                        DesignButton(
-                          type: ButtonType.primary, 
-                          text: 'Button',
-                          onPressed: () {
-                            
-                          },
-                          )
-                      ],
-                    ),
-                  )
-                ],
-              ),
-              ),
+                  ),
+                ),
+              ),)
             )
-          ],
-        ),
+        ],
       ),
     );
   }

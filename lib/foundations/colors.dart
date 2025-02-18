@@ -20,6 +20,10 @@ class DesignColorsFoundation {
   
 
   // Button colors
+
+  /// The disabled button color (refer to [DesignColors] for details).
+  static const Color colorButtonDisabled = DesignColors.darkLight;
+
   /// The primary button color (refer to [DesignColors] for details).
   static const Color colorButtonPrimary = DesignColors.primaryColor;
   /// The primary button color (refer to [DesignColors] for details).

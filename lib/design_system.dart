@@ -1,4 +1,4 @@
-library DesignSistem;
+library;
 
 //Tokens
 export './tokens/colors.dart';

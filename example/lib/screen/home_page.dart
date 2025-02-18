@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:desing_system/design_system.dart';
-import 'package:desing_system/molecules/design_styled_card.dart';
 import 'package:example/config/routes/app_routes.dart';
 
 

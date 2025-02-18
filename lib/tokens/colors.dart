@@ -6,6 +6,9 @@ class DesignColors {
   /// The primary dark color of the app.
   static const dark = Color.fromRGBO(0, 0, 0, 1);
 
+  /// The primary darkLight color of the app.
+  static const darkLight = Color.fromRGBO(93, 93, 93, 1);
+
   /// The primary light color of the app.
   static const light = Color.fromRGBO(255, 255, 255, 1);
 
