@@ -1,5 +1,6 @@
 import 'package:desing_system/design_system.dart';
 import 'package:example/config/routes/app_routes.dart';
+import 'package:example/screen/atoms_button.dart';
 import 'package:example/screen/atoms_page.dart';
 import 'package:example/screen/home_page.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,8 @@ class ShowcaseApp extends StatelessWidget {
             return MaterialPageRoute(builder: (context) => const HomePage());
           case AppRoutes.atoms:
             return MaterialPageRoute(builder: (context) => const AtomsPage());
+          case AppRoutes.atomButton:
+            return MaterialPageRoute(builder: (context) => const AtomsButton());
           default:
             return MaterialPageRoute(builder: (context) => const HomePage());
         }

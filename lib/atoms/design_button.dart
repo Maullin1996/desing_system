@@ -11,6 +11,7 @@ enum ButtonType {
 
 class DesignButton extends StatelessWidget {
   final ButtonType type;
+  final TextStyle? textStyle;
   final String text;
   final Function()? onPressed;
   const DesignButton({
@@ -23,7 +24,10 @@ class DesignButton extends StatelessWidget {
     required this.text,
 
     /// The callback function triggered when the button is pressed.
-    this.onPressed,
+    this.onPressed, 
+    
+    /// The text style of the button.
+    this.textStyle,
   });
 
   @override
@@ -40,7 +44,7 @@ class DesignButton extends StatelessWidget {
         text,
         style: textStyle.copyWith(
           color: DesignColorsFoundation.colorTextButtonPrimary,
-        ),
+        )
       ),
     );
 

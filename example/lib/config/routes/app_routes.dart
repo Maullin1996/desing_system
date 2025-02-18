@@ -2,7 +2,7 @@ class AppRoutes {
   AppRoutes._();
   static const String home = '/';
   static const String atoms = '/atoms';
-  static const String ass = '/assets';
+  static const String atomButton = '$atoms/button';
   static const String assetImage = '$atoms/assetImage';
   static const String image = '$atoms/image';
   static const String separeted = '$atoms/separeted';
